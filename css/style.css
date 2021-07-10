@@ -1,0 +1,154 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #F2F2F2;
+  font-family: 'DM Serif Display', Arial,  sans-serif;
+  font-family: 'Public Sans', Arial, sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* HEADER */
+
+
+.header-section{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.header-button{
+  width: 24px;
+  height: 13px;
+  background-image: url(../img/hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+.header-section--open .header-button{
+  width: 18px;
+  height: 19px;
+  background-image: url(../img/close.svg);
+}
+
+
+.header-nav{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding-top: 24px;
+}
+
+.header-section--open .header-nav__list{
+  display: block;
+}
+
+.header-nav__list{
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background-color: #33323D;
+  padding: 40px 63px;
+}
+
+.header-nav__item:not(:last-child){
+  margin-bottom: 32px;
+}
+
+.header-nav__link{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .header-section{
+    padding: 64px 8px 47px 8px;
+  }
+
+  .header-button{
+    display: none;
+  }
+
+  .header-nav{
+    position: relative;
+    background-color: transparent;
+    display: block;
+    padding-top: 0;
+  }
+
+  .header-nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .header-nav__item:not(:last-child){
+    margin-bottom: 0;
+    margin-right: 42px;
+  }
+
+
+  .header-nav__link{
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323D;
+  }
+
+  .header-nav__link:hover{
+    color: #5FB4A2;
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 1316px) {
+
+
+  .header-section{
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+}
+
+
+
