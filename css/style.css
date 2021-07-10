@@ -38,6 +38,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding-top: 32px;
+  padding-bottom: 40px;
 }
 
 .header-button{
@@ -105,6 +106,7 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  margin-bottom: 24px;
 }
 
 
@@ -135,6 +137,7 @@ body{
   background-color: #203A4C;
   padding: 17px 30px 17px 48px;
 }
+
 
 .hero-content__link::before{
   position: absolute;
@@ -224,6 +227,10 @@ body{
   text-decoration: none;
 }
 
+.about-content__link:hover{
+  color: #33323D;
+  background-color: #5FB4A2;
+}
 
 
 
@@ -258,6 +265,11 @@ body{
   text-decoration: none;
 }
 
+
+.interest-section__link:hover{
+  color: #33323D;
+  background-color: #5FB4A2;
+}
 
 
 /* FOOTER */
@@ -295,6 +307,10 @@ body{
   text-decoration: none;
 }
 
+.footer-nav__link:hover{
+  color: #5FB4A2;
+}
+
 .footer-social__list{
   display: flex;
   justify-content: center;
@@ -306,6 +322,31 @@ body{
 
 .footer-social__item:not(:last-child){
   margin-right: 15px;
+}
+
+
+.github{
+  fill: white;
+}
+
+.github:hover{
+  fill: #5FB4A2;
+}
+
+.twitter{
+  fill: white;
+}
+
+.twitter:hover{
+  fill: #5FB4A2;
+}
+
+.linkedn{
+  fill: white;
+}
+
+.linkedn:hover{
+  fill: #5FB4A2;
 }
 
 
