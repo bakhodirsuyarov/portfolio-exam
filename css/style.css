@@ -367,10 +367,12 @@ body{
 
 
   .hero-content{
-    margin-top: -267px;
+    position: absolute;
+    /* margin-top: -267px; */
     padding-left: 8px;
     padding-right: 8px;
-    /* background-color: #FFFFFF; */
+    background-color: #FFFFFF;
+    top: 466px;
   }
 
   .hero-content__title{
@@ -491,6 +493,7 @@ body{
   }
 
 
+
   /* HERO */
 
 
@@ -507,7 +510,7 @@ body{
   }
 
   .hero-content{
-    margin-top: -439px;
+    top: 292px;
   }
 
   .hero-content__title{
@@ -566,6 +569,13 @@ body{
 
 @media only screen and (min-width: 1440px) {
 
+  .hero-section__img{
+    width: 1045px;
+  }
+
+  .hero-content{
+    top: 325px;
+  }
 
   .interest-section::before{
     width: 419px;
